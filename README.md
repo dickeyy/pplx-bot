@@ -47,7 +47,7 @@ Finally, build and run the bot, either using Docker or locally:
 
 ```bash
 docker build -t pplx-bot .
-docker run pplx-bot
+docker run -d --name pplx-bot --env-file .env pplx-bot
 ```
 
 **Locally:**
