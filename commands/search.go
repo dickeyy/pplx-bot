@@ -68,7 +68,7 @@ func handleSearch(s *discordgo.Session, i *discordgo.InteractionCreate) *discord
 		req := perplexity.NewCompletionRequest(
 			perplexity.WithMessages(msg),
 			perplexity.WithReturnImages(false),
-			perplexity.WithModelLlama31SonarSmall128kOnline(),
+			perplexity.WithDefaultModel(),
 			perplexity.WithMaxTokens(500),
 		)
 		err := req.Validate()
