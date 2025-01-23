@@ -8,6 +8,7 @@ import (
 	"github.com/bwmarrin/discordgo"
 	"github.com/dickeyy/perpbot/components"
 	"github.com/dickeyy/perpbot/services"
+	"github.com/dickeyy/perpbot/utils"
 	"github.com/rs/zerolog/log"
 	"github.com/sgaunet/perplexity-go/v2"
 )
@@ -91,12 +92,13 @@ func handleSearch(s *discordgo.Session, i *discordgo.InteractionCreate) *discord
 			return
 		}
 
-		cont := res.GetLastContent()
+		cont := utils.InjectCitations(res.GetLastContent(), res.GetCitations())
 
 		// end the timer
 		end := time.Now()
 
 		desc := fmt.Sprintf("-# %s asks \n> *\"%s\"*\n\n-# perplexity.ai says\n %s\n\n-# Answered in %s", i.Member.User.Username, query, cont, end.Sub(start).String())
+
 		if debug {
 
 			debugInfo := "```asciidoc\n" +

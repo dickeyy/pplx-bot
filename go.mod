@@ -6,7 +6,7 @@ require (
 	github.com/bwmarrin/discordgo v0.28.1
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.33.0
-	github.com/sgaunet/perplexity-go/v2 v2.2.0
+	github.com/sgaunet/perplexity-go/v2 v2.3.1
 )
 
 require (

@@ -29,6 +29,8 @@ github.com/sgaunet/perplexity-go/v2 v2.0.0 h1:4+MpjLj085uYA4WxwPVnOk5Zzh2yoxAX1R
 github.com/sgaunet/perplexity-go/v2 v2.0.0/go.mod h1:glA8IDM0kOgp4ueL9QxCWRzUCFhLBkcC/m8b/lU0q5Q=
 github.com/sgaunet/perplexity-go/v2 v2.2.0 h1:7OLz8Qsv1ghjlDX15rVlFfCaydlgl4dkeiai30TBRFg=
 github.com/sgaunet/perplexity-go/v2 v2.2.0/go.mod h1:glA8IDM0kOgp4ueL9QxCWRzUCFhLBkcC/m8b/lU0q5Q=
+github.com/sgaunet/perplexity-go/v2 v2.3.1 h1:ITFMi+2dNNT5BxejNdl4nB8ehoabCOf14PTDTz7iHbI=
+github.com/sgaunet/perplexity-go/v2 v2.3.1/go.mod h1:glA8IDM0kOgp4ueL9QxCWRzUCFhLBkcC/m8b/lU0q5Q=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b h1:7mWr3k41Qtv8XlltBkDkl8LoP3mpSgBW8BUoxtEdbXg=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b/go.mod h1:T9bdIzuCu7OtxOm1hfPfRQxPLYneinmdGuTeoZ9dtd4=
 golang.org/x/crypto v0.32.0 h1:euUpcYgM8WcP71gNpTqQCn6rC2t6ULUPiOzfWaXVVfc=
