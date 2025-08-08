@@ -74,7 +74,7 @@ func handleSearch(s *discordgo.Session, i *discordgo.InteractionCreate) *discord
 		)
 		err := req.Validate()
 		if err != nil {
-			log.Error().AnErr("Error validating request", err)
+			log.Error().Msgf("Error validating request: %s", err.Error())
 			errEmbed := components.ErrorEmbed("Failed to validate request\n```" + err.Error() + "```")
 			s.InteractionResponseEdit(i.Interaction, &discordgo.WebhookEdit{
 				Embeds: &[]*discordgo.MessageEmbed{errEmbed},
@@ -84,7 +84,7 @@ func handleSearch(s *discordgo.Session, i *discordgo.InteractionCreate) *discord
 
 		res, err := services.PPLX.SendCompletionRequest(req)
 		if err != nil {
-			log.Error().AnErr("Error sending request", err)
+			log.Error().Msgf("Error sending request: %s", err.Error())
 			errEmbed := components.ErrorEmbed("Failed to send request\n```" + err.Error() + "```")
 			s.InteractionResponseEdit(i.Interaction, &discordgo.WebhookEdit{
 				Embeds: &[]*discordgo.MessageEmbed{errEmbed},
